@@ -1,0 +1,20 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+    <div class="container">
+        <h1>Chat with multiple PDFs</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="user_question">Ask a question about your documents:</label>
+                <input type="text" class="form-control" id="user_question" name="user_question">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        {% if user_question %}
+            <div class="alert alert-info" role="alert">
+                You asked: {{ user_question }}
+                <!-- Display the response here... -->
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

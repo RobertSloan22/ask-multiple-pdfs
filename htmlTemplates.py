@@ -1,5 +1,24 @@
 css = '''
 <style>
+    .stTextInput input {
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        color: #495057;
+        padding: 0.375rem 0.75rem;
+        line-height: 1.5;
+        font-size: 1rem;
+    }
+
+    /* Style the text output box */
+    .stMarkdown {
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        color: #495057;
+        padding: 0.375rem 0.75rem;
+        line-height: 1.5;
+        font-size: 1rem;
+        background-color: #f8f9fa;
+    }
 .chat-message {
     padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1rem; display: flex
 }
