@@ -75,13 +75,13 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.header("Talk to Pdf's Robert Sloan :books:")
+    st.header("Talk to Pdf's Robert Sloan :rocket:")
     user_question = st.text_input("Ask a question about your documents:")
     if user_question:
         handle_userinput(user_question)
 
     with st.sidebar:
-        st.subheader("Your documents")
+        st.subheader("Data upload ")
         pdf_docs = st.file_uploader(
             "Upload your PDFs here and click on 'Process'", accept_multiple_files=True)
         if st.button("Process"):
